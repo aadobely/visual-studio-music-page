@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger | Let Her Go (Official Video)</title>
+    <style>
+        /* CSS Customization for background and colors */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000000;
+            background-image: linear-gradient(45deg, #1a1a1a 25%, transparent 25%), 
+                              linear-gradient(-45deg, #1a1a1a 25%, transparent 25%), 
+                              linear-gradient(45deg, transparent 75%, #1a1a1a 75%), 
+                              linear-gradient(-45deg, transparent 75%, #1a1a1a 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+            background-color: rgba(139, 0, 0, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(255, 0, 0, 0.3);
+            max-width: 900px;
+            margin: 20px;
+            border: 2px solid #8B0000;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #DC143C;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            animation: fadeInDown 1s ease-in;
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            color: #FFB6C1;
+            opacity: 0.9;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(220, 20, 60, 0.5);
+            margin-bottom: 30px;
+            border: 3px solid #8B0000;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* floating music notes animation */
+        .music-note {
+            position: fixed;
+            font-size: 35px;
+            opacity: 0;
+            color: #DC143C;
+            animation: floatUp 4s ease-in infinite;
+        }
+
+        .note1 { left: 10%; animation-delay: 0s; }
+        .note2 { left: 25%; animation-delay: 1s; color: #FFB6C1; }
+        .note3 { left: 50%; animation-delay: 2s; }
+        .note4 { left: 75%; animation-delay: 0.5s; color: #FFB6C1; }
+        .note5 { left: 90%; animation-delay: 1.5s; }
+
+        @keyframes floatUp {
+            0% {
+                bottom: -50px;
+                opacity: 0;
+                transform: translateX(0) rotate(0deg);
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                bottom: 100%;
+                opacity: 0;
+                transform: translateX(100px) rotate(360deg);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 0.9;
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* animated box with red theme */
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: #DC143C;
+            margin: 20px auto;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid #8B0000;
+        }
+
+        .animated-box:hover {
+            transform: scale(1.2) rotate(10deg);
+            background-color: #FF1493;
+            box-shadow: 0 0 20px #DC143C;
+        }
+
+        button {
+            background-color: #8B0000;
+            color: white;
+            border: 2px solid #DC143C;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(220, 20, 60, 0.4);
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #DC143C;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 20, 147, 0.6);
+        }
+
+        .move-animation {
+            animation: moveBox 2s ease-in-out;
+        }
+
+        @keyframes moveBox {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(200px) rotate(180deg);
+            }
+            100% {
+                transform: translateX(0) rotate(360deg);
+            }
+        }
+
+        .song-info {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #FFB6C1;
+        }
+    </style>
+</head>
+<body>
+    <!-- floating music notes for animation -->
+    <div class="music-note note1">♪</div>
+    <div class="music-note note2">♫</div>
+    <div class="music-note note3">♪</div>
+    <div class="music-note note4">♫</div>
+    <div class="music-note note5">♪</div>
+
+    <div class="container">
+        <h1>🎵 Passenger | Let Her Go 🎵</h1>
+        <p class="subtitle">One of my favorite songs that brings back so many memories</p>
+
+        <!-- YouTube Video Embedded -->
+       <!-- YouTube Video Embedded -->
+        <div class="video-wrapper">
+            <!-- 
+                The official Maroon 5 video is blocked from embedding by the record label.
+                I have replaced it with the Boyce Avenue Acoustic Cover (ID: QISBZEq9OXc) 
+                which is fully embeddable and works perfectly.
+            -->
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/RBumgq5yVrA?si=Eg-eTJOZ5MPhbi-b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <!-- JavaScript animated element -->
+        <div class="animated-box" id="animatedBox"></div>
+        <button onclick="animateBox()">Click to Animate!</button>
+        <p class="song-info">Hover over the red box or click the button to see cool animations!</p>
+    </div>
+
+    <script>
+        // Function to animate the box element
+        function animateBox() {
+            const box = document.getElementById('animatedBox');
+
+            // Remove the animation class if its already there
+            box.classList.remove('move-animation');
+
+            // trigger reflow to restart the animation
+            void box.offsetWidth;
+
+            // Add animation class back
+            box.classList.add('move-animation');
+
+            // random color change from array
+            const colors = ['#DC143C', '#FF1493', '#8B0000', '#FF69B4', '#C71585'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+            // set timeout to change color after 1 second
+            setTimeout(() => {
+                box.style.backgroundColor = randomColor;
+            }, 1000);
+        }
+
+        // pulse effect when page loads
+        window.addEventListener('load', function() {
+            const container = document.querySelector('.container');
+            container.style.animation = 'fadeIn 1.5s ease-in';
+        });
+
+        // Interactive animation when mouse enters the box
+        const box = document.getElementById('animatedBox');
+        box.addEventListener('mouseenter', function() {
+            // scale and rotat the box on hover
+            this.style.transform = 'scale(1.2) rotate(10deg)';
+        });
+
+        box.addEventListener('mouseleave', function() {
+            // return to orignal state
+            this.style.transform = 'scale(1) rotate(0deg)';
+        });
+
+        // Additional effect: box pulses on click
+        box.addEventListener('click', function() {
+            // add glow effect when clicked
+            this.style.boxShadow = '0 0 30px #DC143C';
+            setTimeout(() => {
+                this.style.boxShadow = 'none';
+            }, 500);
+        });
+    </script>
+</body>
+</html>
